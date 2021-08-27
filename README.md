@@ -12,4 +12,4 @@ Installing pymesh is nearly really hard on windows.
 
 Happy isomeshing! I hope this project is usefull to someone 😀
 
-Image 
+![Gif of bones moving](https://github.com/tintin10q/python-isosurface-notebooks/blob/main/Bones-marching-cubes-.gif?raw=true)
