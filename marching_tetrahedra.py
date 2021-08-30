@@ -165,8 +165,7 @@ def export_triangles(triangles, output_name):  # stl format
 		f.write("endsolid points")
 
 
-
-def march_with_tetrahendras(volume:numpy.ndarray, isovalue:int = 1, verbose: bool = False) -> list:
+def march_with_tetrahendras(volume: numpy.ndarray, isovalue: int = 1, verbose: bool = False) -> list:
 	"""
 	:param volume: The volume that is to be marched. Should be a 3d array
 	:param isovalue: The value that indicates the border of the surface
@@ -177,8 +176,8 @@ def march_with_tetrahendras(volume:numpy.ndarray, isovalue:int = 1, verbose: boo
 	if verbose: print(f"Starting with march of volume {volume.shape}... \nI = Current iteration number, T = Current amount of found triangles")
 	for i in range(len(volume) - 1):
 		if verbose:
-			print(f"I:{i} T:{len(triangles)}",end=", ")
-			if i % 5 == 0 and i > 5: print()  # New line every 10 progress updates
+			print(f"I:{i} T:{len(triangles)}", end=", ")
+			if i % 5 == 0 and i > 1: print()  # New line every 10 progress updates
 		for j in range(len(volume[i]) - 1):
 			for k in range(len(volume[i][j]) - 1):
 				p = [None] * 8
