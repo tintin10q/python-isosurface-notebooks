@@ -8,7 +8,7 @@ Implemented algorithms are:
 - Marching  Tetrahedra 
 - Non functional Dual Contouring.
 
-Installing pymesh is nearly really hard on windows. 
+Installing pymesh is rearly really hard on windows. 
 
 Happy isomeshing! I hope this project is usefull to someone 😀
 
